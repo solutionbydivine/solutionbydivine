@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+
+<style>
+
+  html, body {
+  margin: 0;
+  font: 14px 'Source Sans Pro', Arial, verdana, helvetica, sans-serif;
+}
+
+.icons svg{fill: currentColor;}
+.icons path{fill: currentColor;}
+.icons{fill: currentColor;}
+
+/* ---------------------------------- */
+/* ----------- SECTION 6 ------------ */
+/* ---------------------------------- */
+
+#section6 .container {
+  max-width: 100%;
+  padding: 0 !important;
+}
+#section6 .grid {
+   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+#section6 .col {
+  padding: 0;
+  position: relative;
+  background: #1f1f1f;
+}
+#section6 .col:hover {
+  background: #af8734;
+}
+#section6 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.15;
+  filter: alpha(opacity=15);
+}
+#section6 .col:hover img {
+  opacity: 0.04;
+  filter: alpha(opacity=4);
+}
+#section6 .testText {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 20%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+
+  -webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+
+     display: -webkit-flex;
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+           -webkit-box-orient: horizontal;
+           -webkit-box-direction: normal;
+           flex-direction: row;
+
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+           -webkit-box-align: center;
+           align-items: center;
+
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+           -webkit-box-pack: center;
+           justify-content: center;
+}
+#section6 .testText .inner {
+  position: relative;
+  line-height: 1.4em;
+}
+#section6 .testText .inner:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 0.8em;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  color: #1b1b1b;
+}
+
+#section6 .col:hover .testText {
+  top: 5%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#section6 .testName {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+}
+#section6 h4 {
+  font-size: 1em;
+  line-height: 2em;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+#section6 h4 strong {
+  color: #cfa03a;
+}
+#section6 .col:hover h4 strong {
+  color: #1b1b1b;
+}
+
+/* ----------- SECTION 6 ICONS ------------ */
+
+.testName .testIcon {
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+#section6 svg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  fill: #cfa03a;
+}
+
+#section6 svg.plus {
+  fill: #000;
+}
+
+#section6 svg.plus {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#section6 .col:hover svg.plus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#section6 svg:first-child {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#section6 .col:hover svg:first-child {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/*-----------------------------------*/
+/*-------------- GRID ---------------*/
+/*-----------------------------------*/
+.grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.grid .col {
+  padding: 10px;
+}
+
+.grid.small-gutter .col {
+  padding: 5px;
+}
+
+.col-1 .col {
+  width: 100%;
+}
+
+.col-2 .col {
+  width: 50%;
+}
+
+.col-3 .col {
+  width: 33.33333%;
+}
+
+.col-4 .col {
+  width: 25%;
+}
+
+.col-5 .col {
+  width: 20%;
+}
+
+.col-6 .col {
+  width: 19%;
+}
+
+.grid .col-1 {
+  width: 6.25%;
+}
+.grid .col-2 {
+  width: 12.5%;
+}
+.grid .col-3 {
+  width: 18.75%;
+}
+.grid .col-4 {
+  width: 25%;
+}
+.grid .col-5 {
+  width: 31.25%;
+}
+.grid .col-6 {
+  width: 37.5%;
+}
+.grid .col-7 {
+  width: 43.75%;
+}
+.grid .col-8 {
+  width: 50%;
+}
+.grid .col-9 {
+  width: 56.25%;
+}
+.grid .col-10 {
+  width: 62.5%;
+}
+.grid .col-11 {
+  width: 68.75%;
+}
+.grid .col-12 {
+  width: 75%;
+}
+.grid .col-13 {
+  width: 81.25%;
+}
+.grid .col-14 {
+  width: 87.5%;
+}
+.grid .col-15 {
+  width: 93.75%;
+}
+.grid .col-16 {
+  width: 100%;
+}
+
+@media all and (max-width: 1400px) {
+.col-5 .col {
+  width: 33.33%;
+}
+  .col-5 .col:last-child {
+    display: none;
+  }
+}
+
+@media all and (max-width: 900px) {
+.col-5 .col {
+  width: 50%;
+}
+}
+
+@media all and (max-width: 600px) {
+.col-5 .col {
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+<section id="testimonial">
+<div id="section6">
+<div class="grid col-5">
+<div class="col test"><img src="https://www.websitedesign.sydney/files/cafe.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Very professional everything was kept on a professional level website was of a very high standard.I am happy with the website and service.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Dee <strong>Online Fashion</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/chef.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">The web site turned out very well. I get a lot of compliments. My logo and business card are also very good. The whole process was well explained and easy considering I know nothing about web building.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Trevor <strong>Chef</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/builder.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Very happy with website I have had positive feedback from my clients.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Michael <strong>Builder</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/accountant.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Great. no complaints.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Erica <strong>Accountant</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/artist.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Its been nearly 6 weeks since my website came live, and I wanted to thank you for doing a stunning job.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Adam <strong>Artist</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/planner.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">I have recommended you several people.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Chris <strong>Surveyor</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/onphone.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Thanks to everyone for all their hard work. CMS is fantastic to use!!! Thanks</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Steve <strong>Developer</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/dancer.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">What an amazing system you guys provide. I can see the value of getting to know the console well - I'm impressed and I've come to the right company. This is quite the adventure, thanks for your expertise.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Wendy <strong>Dancer</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/dog.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">Positive. As an old fart with limited internet skills I was delighted with the initial help in putting my site together and the ongoing assistance at times it was needed in updating the site.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Bill <strong>Dog Groomer</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="https://www.websitedesign.sydney/files/healer.jpg" alt="testimonial image" />
+<div class="testText">
+<div class="inner">WOW!!!! That looks so fantastic! I have already begun asking my collegues to "havealook" at my new web design. I have seen sites that have cost thousands of dollars and they simply dont compare to the high quality product you have created.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Jill <strong>Healer</strong></h4>
+</div>
+</div>
+</div>
+</div>
+    </section>
+</body>
+
+</html>

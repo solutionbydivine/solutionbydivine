@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background: rgba(23,162,184,0.3);
+}
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .box{
+    background: #fff;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.wrapper .box i.quote{
+    font-size: 20px;
+    color: #17a2b8;
+}
+.wrapper .box .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.box .info .name{
+    font-weight: 600;
+    font-size: 17px;
+}
+.box .info .job{
+    font-size: 16px;
+    font-weight: 500;
+    color: #17a2b8;
+}
+.box .info .stars{
+    margin-top: 2px;
+}
+.box .info .stars i{
+    color: #17a2b8;
+}
+.box .content .image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #17a2b8;
+    border-radius: 50%;
+}
+.content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.box:hover .content .image img{
+    border-color: #fff;
+}
+@media (max-width: 1045px) {
+    .wrapper .box{
+        width: calc(50% - 10px);
+        margin: 10px 0;
+    }
+}
+@media (max-width: 702px) {
+   .wrapper .box{
+        width: 100%;
+    }
+
+
+
+    </style>
+  </head>
+
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mobile-center">
+            <i class="fas fa-envelope"></i>solutionbydivine@gmail.com
+            <i class="fas fa-mobile-alt pl-2"></i> Call/Whatsapp 055 460 1212
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="https://web.facebook.com/solutionbydivine?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/solnbydivine" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCpJht4gMgVsqjs2cXi3_iMw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/solutionbydivine/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<nav class="navbar navbar-expand-md bg-custom navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="max-width:40px"><img src="images/logo.png"></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav float-right mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#service">Repairs/Services</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#store">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.htm">Blog</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="layer">
+        <div class="centerall">
+        <h2>Welcome to</h2>
+        <h1>DivineSolution Smartphone Repairs<br>(DSSR-GH)</h1>
+
+          <p class="pl-4 pr-4">(The iPhone repair service that come to your location)</p>
+          <div class="row">
+            <div class="col text-center">
+              <button type="button" class="btn btn-danger" onclick="location.href='#store'" >Enter Store</button>
+              <button type="button" class="btn btn-success" onclick="location.href='appointment.htm'" >Book Appointment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section id="service">
+      <h1>Our Services</h1>
+      <hr>
+      <p class="font10"> We offer the following services
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/iPhone.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='iphonerepairs.htm'">iPhone Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/iPad.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='ipadrepairs.htm'">iPad Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/smartphones.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='smartphonerepairs.htm'">Smartphone Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/tablet.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='tabletrepairs.htm'">Tablet Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/laptop.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='laptoprepairs.htm'">Laptop/PC Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3">
+                <i><img src="images/videogame.png"></i>
+              </div>
+              <div class="col-md-9">
+                <h3 onclick="location.href='videogamerepairs.htm'">Video Game Repairs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="store">
+      <h1>Store</h1>
+      <hr>
+      <p class="font10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-4">
+            <img src="1.jpg" class="img-responsive">
+            <div class="content">
+              <p>john Dee</p>
+              <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="1.jpg" class="img-responsive">
+            <div class="content">
+              <p>john Dee</p>
+              <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="1.jpg" class="img-responsive">
+            <div class="content">
+              <p>john Dee</p>
+              <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="aboutus">
+      <h1>About Us</h1>
+      <hr>
+      <p class="font10"> The first mobile, mobile phone repairs that comes to your location. </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="02.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+            <h4>@ DivineSolution Smartphone Repairs</h4>
+            <p> We provide on the spot repairs for your iPhone and android phones.
+                We offer a wide range of repair services for many different devices.
+                We have repaired thousands of iPhones and have years of experience.
+                We use the highest parts in the market and do not compromise when it comes to the quality
+                of our parts and workmanship.
+                We treat your device the same way we will treat ours that is why we offer 30 days warranty on all our repairs.
+                We know your electronic device is an essential part of your life and we will do our best to provide fast and convenient service.
+                Our main goal is to make every single customer 100% satisfied with our quality repairs.
+
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Affordable Price</h5>
+                <p>We have the best unbeatable prices in the market.
+                </p>
+                <h5>Authentic Parts</h5>
+                <p>We only use 100% original parts in all our repairs. Each spare part is thoroughly
+                    checked to make sure it’s in excellent condition.
+                </p>
+              </div>
+              <div class="col-md-6">
+
+                <h5>Warranty</h5>
+                <p>
+                    Our phone repairs comes with 30-days warranty.
+                </p>
+
+                <h5>Skilled Technicians</h5>
+                <p>
+                    Our technicians are well trained to repair a wide range of devices and problems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="review">
+        <h1>Reviews</h1>
+      <hr>
+      <p class="font10">Here is what people are saying aboout us.
+      </p>
+         <div class="wrapper">
+        <div class="box">
+            <i class="fas fa-quote-left quote"></i>
+            <p>The most amazing friendly and professional service. With a lot of patience and direction. Not only is my phone sorted out but I managed to save a lot of money and time.
+            Visit Divine Solution and you won't be sorry. Thank you again Divine.</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Eugene Ashie</div>
+                    <div class="job">Musician</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/wisa.jpg" alt="wisa">
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-left quote"></i>
+            <p>Truly excellent service! Divine was prompt, efficient, friendly, knowledgeable and was able to fix my iPhone7 in record time. I highly recommend his service.</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">George Otinkorang </div>
+                    <div class="job">YouTuber | Blogger</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/george.jpg" alt="george">
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-left  quote"></i>
+            <p>What an experience, everything went super smooth, my Samsung J3 Prime was unlocked in no time. Divine has the best customer service, any question you have, he answers. Very nice guy and I am super happy that my phone got unlocked with no issues whatsoever. Great service!!!!!!!!!!!!!!!!!!!! Thanks Divine!</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Michael Ashong</div>
+                    <div class="job">Uber Driver</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/mike.jpg" alt="mike">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <section id="contactus">
+      <h1>Contact Us</h1>
+      <hr>
+     <p class="font12">
+          On the La Beach road, near Dreamland<br>
+                 P.O.Box A69<br>
+                 La-Accra       <br>
+                 0554601212         <br>
+                 0277120120<br>
+                solutionbydivine@gmail.com
+      </p>
+
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-8">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name*">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email*">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject*">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Number*">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-custom">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0545565041352!2d-0.15378268523405966!3d5.5589324959695325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9be2c5fbc083%3A0x31ef942511161836!2sDivineSolution%20Smartphone%20Repairs!5e0!3m2!1sen!2sgh!4v1635382336671!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text-left">© solutionbydivine 2017</p>
+          </div>
+          <div class="col-md-4 float-right text-right">
+             <a href="https://web.facebook.com/solutionbydivine?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/solnbydivine" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCpJht4gMgVsqjs2cXi3_iMw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/solutionbydivine/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <br>Designed by <a href="https://twitter.com/donkingsize" target="_blank"> Divine James</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+        href="https://wa.me/233554601212"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

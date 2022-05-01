@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/appointmentstyle.css">
+    <script type="text/javascript" src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"></script>
+  <style>
+  .whatsapp_float {
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25d366;
+          color: #FFF;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 100;
+      }
+
+      .whatsapp-icon {
+          margin-top: 16px;
+      }
+
+      /* for mobile */
+      @media screen and (max-width: 767px) {
+          .whatsapp-icon {
+              margin-top: 10px;
+          }
+
+          .whatsapp_float {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+          }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family:  "Lucida Fax", "Lucida Bright", sans-serif;
+  scroll-behavior: smooth;
+}
+  #body_header
+{
+
+	width:auto;
+	margin:0px auto;
+	text-align:center;
+	font-size:25px;
+}
+form {
+  max-width: 480px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+p {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: auto;
+  outline: 0;
+  padding: 8px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+
+
+
+
+ #appointment {
+  background:  url(05.JPG);
+  background-size: cover;
+  background-position: top center;
+}
+
+ }
+    appointment {
+
+    }
+
+</style>
+</head>
+
+ <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mobile-center">
+            <i class="fas fa-envelope"></i>solutionbydivine@gmail.com
+            <i class="fas fa-mobile-alt pl-2"></i> Call/Whatsapp 055 460 1212
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="https://web.facebook.com/solutionbydivine?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/solnbydivine" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCpJht4gMgVsqjs2cXi3_iMw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/solutionbydivine/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<nav class="navbar navbar-expand-md bg-custom navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav float-right mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm">Home</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="index.htm#service">Repair/Service</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="index.htm#store">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm#aboutus">About Us</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.htm#contactus">Contact Us</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="layer">
+        <div class="centerall">
+
+        <h1>Book Your Repairs</h1>
+        <p class="pl-4 pr-4">We'll come to you on the day selected to fix your device at a place and time of your choice</p>
+
+        </div>
+        </div>
+    </section>
+
+
+    <section>
+           <div id="appointment">
+        <!--This is a division tag for body container-->
+        <div id="body_header">
+            <!--This is a division tag for body header-->
+
+        </div>
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend><span class="number">1</span>Your details</legend>
+                <label for="name">Name*:</label>
+                <input type="text" id="name" name="user_name" placeholder="Divine" required pattern="[a-zA-Z0-9]+">
+
+                <label for="email">Email*:</label>
+                <input type="email" id="mail" name="user_email" placeholder="solutionbydivine@gmail.com" required>
+
+                <label for="tel">Contact Num:</label>
+                <input type="tel" id="tel" placeholder="0277120120" pattern="[0-9]{10}" name="user_num" required="required">
+
+                <label for="bestcontact">What is the best way to reach you?</label>
+                <input type="radio" name="phone" value="phone" checked> Phone
+                <input type="radio" name="email" value="email"> Email
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span class="number">2</span>Device Info</legend>
+
+                <label for="device_model">Device Model:</label>
+                <select id="device_model" name="device_model" required>
+                    <option value="selectdevice">Select Device</option>
+                    <option value="iphone13promax">iPhone 13 Pro Max</option>
+                    <option value="iphone13pro">iPhone 13 Pro</option>
+                    <option value="iphone13">iPhone 13</option>
+                    <option value="iphone13mini">iPhone 13 mini</option>
+                    <option value="iphone12promax">iPhone 12 Pro Max</option>
+                    <option value="iphone12pro">iPhone 12 Pro</option>
+                    <option value="iphone12mini">iPhone 12 mini</option>
+                    <option value="iphonese2ndgen">iPhone SE (2nd gen)</option>
+                    <option value="iphone11promax">iPhone 11 Pro Max</option>
+                    <option value="iphone11pro">iPhone 11 Pro</option>
+                    <option value="iphone11">iPhone 11</option>
+                    <option value="iphonexr">iPhone XR</option>
+                    <option value="iphonexsmax">iPhone XS Max</option>
+                    <option value="iphonexs">iPhone XS</option>
+                    <option value="iphonex">iPhone X</option>
+                    <option value="iphone8plus">iPhone 8 Plus</option>
+                    <option value="iphone8">iPhone 8</option>
+                    <option value="iphone7plus">iPhone 7 Plus</option>
+                    <option value="iphone7">iPhone 7</option>
+                    <option value="iphoneSe1stgen">iPhone SE (1st gen)</option>
+                    <option value="iphone6splus">iPhone 6S Plus</option>
+                    <option value="iphone6S">iPhone 6S</option>
+                    <option value="iphone6plus">iPhone 6 Plus</option>
+                    <option value="iphone6">iPhone 6</option>
+                    <option value="iphone5s">iPhone 5S</option>
+                    <option value="iphone5c">iPhone 5C</option>
+                    <option value="iphone5">iPhone 5</option>
+
+                </select>
+                 <label for="type_of_service">Type of Service:</label>
+                <select id="type_of_service" name="type_of_service" required>
+                    <option value="selectservice">Select Service</option>
+                    <option value="screenreplacement">Screen Replacement</option>
+                    <option value="batteryreplacement">Battery Replacement</option>
+                    <option value="housingreplacement">Housing Replacement</option>
+                    <option value="backglassreplacement">Back Glass Replacement</option>
+                    <option value="chargingportreplacement">Charging Port Replacement</option>
+                    <option value="buttons">Buttons Repair (Volume, Power, Silent)</option>
+                    <option value="frontcamerareplacement">Front Camera Replacement</option>
+                    <option value="rearcamerareplacement">Rear Camera Replacement</option>
+                    <option value="iosrestore/update">iOS Restore/Update</option>
+                    <option value="geveyactivation">Gevey Activation</option>
+                    <option value="unlocking">Unlocking (Temporal & Permanent)</option>
+                    <option value="waterdamage">Water Damage</option>
+                </select>
+                <label for="additional_information">Any additional information? (Optional)</label>
+                <textarea id="additional_information" name="additional_information" placeholder="Wanna add anything else? Enter it here!"></textarea>
+                <label for="date">Date of Appointment:</label>
+                <input type="date" name="date" value="date" required></input>
+                <br>
+                <label for="time">Time of Appointment:</label>
+                <input type="time" name="time" value="time" required></input>
+                <br>
+
+            </fieldset>
+            <button type="submit">Request For Appointment</button>
+        </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="text-left">© solutionbydivine 2017</p>
+          </div>
+          <div class="col-md-4 float-right text-right">
+             <a href="https://web.facebook.com/solutionbydivine?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/solnbydivine" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCpJht4gMgVsqjs2cXi3_iMw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/solutionbydivine/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <br>Designed by <a href="https://twitter.com/donkingsize" target="_blank"> Divine James</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+        href="https://wa.me/233554601212"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
